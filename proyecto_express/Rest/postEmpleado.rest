@@ -1,0 +1,11 @@
+POST http://localhost:3000/empleados
+Content-Type: application/json
+
+{
+    "nombre": "Maria",
+    "apellido_p": "Cardozo",
+    "apellido_m": "Mirage",
+    "telefono": "111555888",
+    "mail": "mari@mail.com",
+    "direccion": "Av siempre viva 19B"
+}

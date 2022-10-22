@@ -1,0 +1,11 @@
+PUT http://localhost:3000/empleados/63521a8e1a7b4ad182f56cc4
+Content-Type: application/json
+
+{
+    "nombre": "test1",
+    "apellido_p": "lorem",
+    "apellido_m": "ipsum",
+    "telefono": "666666",
+    "mail": "666@mail.com",
+    "direccion": "Av siempre viva 19B"
+}

@@ -1,0 +1,1 @@
+DELETE http://localhost:3000/empleados/63521a8e1a7b4ad182f56cc4
