@@ -1,9 +1,9 @@
 const Empleado = require('../model/Empleado');
 
 let response = {
-    msg: "",
+    msg: '',
     exito: false
-}
+};
 
 exports.create = (req, res) => {
 
@@ -14,7 +14,7 @@ exports.create = (req, res) => {
         telefono: req.body.telefono,
         mail: req.body.mail,
         direccion: req.body.direccion
-    })
+    });
 
     empleado.save((err) => {
         if (err) {
@@ -29,15 +29,15 @@ exports.create = (req, res) => {
 
         response.msg = 'El empleado se guardó correctamente';
         res.json(response);
-    })
-}
+    });
+};
 
 exports.find = (req, res) => Empleado.find((err, empleados) => res.json(empleados));
 
 exports.findOne = (req, res) => {
-    const id = { _id: req.params.id }
+    const id = { _id: req.params.id };
 
-    Empleado.findById(id, (err, empleado) => { res.json(empleado) });
+    Empleado.findById(id, (err, empleado) => { res.json(empleado); });
 };
 
 exports.update = (req, res) => {
@@ -64,8 +64,8 @@ exports.update = (req, res) => {
 
         response.msg = 'El empleado se guardó correctamente';
         res.json(response);
-    })
-}
+    });
+};
 
 exports.remove = (req, res) => {
 
@@ -82,4 +82,4 @@ exports.remove = (req, res) => {
         response.msg = 'El empleado se elminó correctamente';
         res.json(response);
     });
-}
+};

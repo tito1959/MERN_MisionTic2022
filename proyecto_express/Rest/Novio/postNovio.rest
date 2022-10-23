@@ -1,0 +1,12 @@
+POST http://localhost:3000/novios
+Content-Type: application/json
+
+{
+    "novio_id": "1234",
+    "nombre_novio": "Mario CCC",
+    "edad": 44,
+    "estatura": 2.98,
+    "color_ojos": "purpura",
+    "nacionalidad": "Colombiano",
+    "etina": "Cucacico"
+}

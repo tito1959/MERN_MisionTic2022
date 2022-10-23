@@ -7,6 +7,6 @@ const EmpeladosSchema = new Schema({
     telefono: { type: String, required: true, max: 15 },
     mail: { type: String, required: false, max: 70 },
     direccion: { type: String, required: false, max: 150 },
-})
+});
 
-module.exports = model("empleado", EmpeladosSchema);
+module.exports = model('empleado', EmpeladosSchema);

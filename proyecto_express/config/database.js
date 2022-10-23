@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
 
-const host = "localhost";
-const port = "27017";
-const db = "hr";
+const host = 'localhost';
+const port = '27017';
+const db = 'hr';
 
 exports.mongoConnect = () => {
     const mongoStringConnection = `mongodb://${host}:${port}/${db}`;
 
     mongoose.connect(mongoStringConnection)
-        .then(() => console.log("Database Connected"));
+        .then(() => console.log('Database Connected'));
     mongoose.Promise = global.Promise;
 
     const dbConnection = mongoose.connection;
@@ -19,5 +19,5 @@ exports.mongoConnect = () => {
     *  }) 
     */
 
-    dbConnection.on("error", console.error.bind(console, "Mongodb connection error"));
-}
+    dbConnection.on('error', console.error.bind(console, 'Mongodb connection error'));
+};
