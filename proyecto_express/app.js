@@ -10,6 +10,7 @@ const database = require('./config/database');
 let auth = require('./auth/main_auth');
 let empleadoRouter = require('./routes/empleadoRouter');
 let novioRouter = require('./routes/novioRouter');
+let usuarioRouter = require('./routes/usuarioRouter');
 
 var app = express();
 
@@ -26,16 +27,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 // mongo connection:
 database.mongoConnect();
 
-// auth jwt:
-app.use(auth);
-
 /**
  * Routers
  */
 
-app.use('/empleados', empleadoRouter);
-app.use('/novios', novioRouter);
+app.use('/usuarios', usuarioRouter);
 
+// auth jwt:
+app.use(auth);
+
+app.use('/novios', novioRouter);
+app.use('/empleados', empleadoRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

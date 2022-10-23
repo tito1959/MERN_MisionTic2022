@@ -1,1 +1,2 @@
 GET http://localhost:3000/empleados
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNTRhZDA4MDk0YzY0MmMwNDc4NjYyYyIsInVzdWFyaW8iOiJhZG1pbiIsImlhdCI6MTY2NjQ5Mzc2NCwiZXhwIjoxNjY2NTM2OTY0fQ.cT-TADdWRdyLGp3KsD1ku5CA4PEl3M5pSS8l3G_pFIg 
